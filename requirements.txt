@@ -3,7 +3,7 @@ crewai
 openai
 anthropic
 pydantic
-pypdf==6.9.0
-plotly==6.6.0
-python-dotenv==1.2.2
-tiktoken==0.4.3
+pypdf
+plotly
+python-dotenv
+tiktoken>=0.7.0
