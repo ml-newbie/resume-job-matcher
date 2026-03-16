@@ -3,6 +3,6 @@ crewai
 openai
 anthropic
 pydantic
-pdfplumber
+pypdf
 plotly
 python-dotenv
