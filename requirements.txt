@@ -1,9 +1,9 @@
-streamlit
+streamlit==1.26.0
 crewai
 openai
 anthropic
 pydantic
-pypdf
-plotly
-python-dotenv
+pypdf==6.9.0
+plotly==6.6.0
+python-dotenv==1.2.2
 tiktoken==0.4.3
