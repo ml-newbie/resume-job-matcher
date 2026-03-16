@@ -1,0 +1,76 @@
+{
+    "candidate_name": "John Carter",
+    "job_title": "AI Engineer (LLM Systems)",
+    "overall_fit_score": 7,
+    "skills_match": {
+        "score": 8,
+        "matching_skills": [
+            "Python",
+            "Machine Learning",
+            "Deep Learning",
+            "NLP",
+            "Transformers",
+            "LangChain",
+            "FastAPI",
+            "PostgreSQL",
+            "MongoDB",
+            "Vector Databases (FAISS, Pinecone)",
+            "Docker",
+            "Git"
+        ],
+        "missing_skills": [
+            "CrewAI",
+            "AWS basics"
+        ],
+        "critical_gaps": [
+            "Experience deploying ML systems to cloud platforms"
+        ]
+    },
+    "experience_match": {
+        "score": 7,
+        "analysis": "John has a solid background in AI and ML, with relevant experience in building LLM-powered applications, APIs, and pipelines. His experience with LangChain and vector databases aligns well with the role. However, his experience with cloud deployment is limited, which is a key aspect of the role.",
+        "pros": [
+            "Strong Python and ML background",
+            "Hands-on experience with LLM frameworks and vector databases",
+            "Experience in building scalable AI pipelines"
+        ],
+        "cons": [
+            "Limited cloud deployment experience",
+            "No mention of CrewAI experience, which is preferred"
+        ]
+    },
+    "technical_alignment": {
+        "score": 8,
+        "analysis": "John's technical skills closely match the requirements, especially in Python, NLP, LLM frameworks, and backend development. His familiarity with Docker and databases supports deployment needs. The main gap is cloud infrastructure experience, which is critical for production deployment at scale.",
+        "pros": [
+            "Excellent technical skill set for the role",
+            "Experience with relevant frameworks and tools"
+        ],
+        "cons": [
+            "Limited cloud infrastructure experience"
+        ]
+    },
+    "role_readiness": {
+        "score": 6,
+        "analysis": "While John demonstrates strong technical capabilities and relevant project experience, his limited exposure to deploying ML systems in cloud environments and lack of CrewAI experience suggest he may need additional ramp-up time for full role readiness.",
+        "pros": [
+            "Relevant project experience and skills"
+        ],
+        "cons": [
+            "Potential need for training on cloud deployment and CrewAI"
+        ]
+    },
+    "insights": {
+        "potential_red_flags": [
+            "Limited cloud deployment experience",
+            "No explicit CrewAI experience"
+        ],
+        "suggested_interview_questions": [
+            "Can you describe your experience deploying ML systems to cloud platforms?",
+            "Have you worked with CrewAI or similar multi-agent frameworks?",
+            "How do you ensure the reliability and scalability of AI APIs in production?"
+        ],
+        "culture_fit_estimation": "John appears to be a motivated and technically skilled candidate with a strong interest in AI infrastructure and multi-agent systems, which aligns well with the company's innovative culture."
+    },
+    "executive_summary": "John Carter is a technically proficient AI engineer with extensive experience in LLM applications, NLP, and backend API development. While his hands-on skills are a strong match, his limited cloud deployment experience and lack of CrewAI familiarity are potential gaps. He could be a good fit with some onboarding support for cloud infrastructure and multi-agent frameworks."
+}

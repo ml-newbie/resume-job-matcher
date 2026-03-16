@@ -1,0 +1,74 @@
+{
+    "candidate_name": "JOHN DOE",
+    "job_title": "Senior AI Engineer",
+    "overall_fit_score": 6,
+    "skills_match": {
+        "score": 7,
+        "matching_skills": [
+            "Python",
+            "PyTorch",
+            "Docker",
+            "AWS",
+            "SQL",
+            "Pandas"
+        ],
+        "missing_skills": [
+            "GCP or Azure experience",
+            "API development"
+        ],
+        "critical_gaps": [
+            "Experience deploying ML systems to production",
+            "Experience with cloud infrastructure (GCP, Azure)"
+        ]
+    },
+    "experience_match": {
+        "score": 7,
+        "analysis": "John has solid experience in building and deploying ML models, especially in production environments at NovaTech AI. His background in NLP, recommendation systems, and ML infrastructure aligns well with the role's technical needs. However, his exposure to cloud infrastructure is limited to AWS, and he lacks direct experience with API development and full deployment pipelines.",
+        "pros": [
+            "Strong Python and ML frameworks experience.",
+            "Hands-on with ML deployment and production systems.",
+            "Experience working in cross-functional teams and with cloud services (AWS)."
+        ],
+        "cons": [
+            "Limited experience with GCP or Azure cloud platforms.",
+            "No explicit experience with API development.",
+            "Lack of Kubernetes or container orchestration experience."
+        ]
+    },
+    "technical_alignment": {
+        "score": 6,
+        "analysis": "While John has good technical skills in Python, ML frameworks, and cloud services (AWS), he has limited exposure to the full spectrum of deployment tools such as Kubernetes and API development, which are important for this role.",
+        "pros": [
+            "Proficient in core ML tools and cloud infrastructure."
+        ],
+        "cons": [
+            "Limited experience with container orchestration (Kubernetes).",
+            "No mention of experience with GCP or Azure, which are preferred."
+        ]
+    },
+    "role_readiness": {
+        "score": 5,
+        "analysis": "John demonstrates the ability to work on ML systems and has relevant experience, but his lack of experience with deploying ML systems at scale, API development, and multi-cloud environments suggests he may need time to reach full role readiness.",
+        "pros": [
+            "Experience in ML system development and deployment.",
+            "Good understanding of ML pipelines."
+        ],
+        "cons": [
+            "Limited experience with API development and container orchestration.",
+            "No direct experience with GCP or Azure cloud platforms."
+        ]
+    },
+    "insights": {
+        "potential_red_flags": [
+            "Limited cloud platform experience outside AWS.",
+            "No explicit experience with API development or Kubernetes."
+        ],
+        "suggested_interview_questions": [
+            "Can you describe your experience deploying ML models in a production environment, and what tools and processes you used?",
+            "Have you worked with cloud platforms other than AWS, such as GCP or Azure? If not, how do you plan to adapt?",
+            "Can you give an example of a project where you developed or integrated APIs for ML services?"
+        ],
+        "culture_fit_estimation": "John appears adaptable and collaborative, with experience working closely with product teams, which suggests a good culture fit for a team-oriented environment."
+    },
+    "executive_summary": "John Doe is a technically capable ML engineer with strong experience in deploying ML models and working with cloud infrastructure, primarily AWS. However, he has limited exposure to multi-cloud environments, API development, and container orchestration tools like Kubernetes. He could be a good fit with some ramp-up, but currently, he may require additional training to meet all the technical demands of the Senior AI Engineer role at Horizon AI Systems."
+}

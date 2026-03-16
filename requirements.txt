@@ -1,0 +1,8 @@
+streamlit
+crewai
+openai
+anthropic
+pydantic
+pdfplumber
+plotly
+python-dotenv

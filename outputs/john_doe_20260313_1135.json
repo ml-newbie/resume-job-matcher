@@ -1,0 +1,76 @@
+{
+    "candidate_name": "JOHN DOE",
+    "job_title": "Senior AI Engineer",
+    "overall_fit_score": 7,
+    "skills_match": {
+        "score": 7,
+        "matching_skills": [
+            "Python",
+            "PyTorch",
+            "AWS",
+            "Docker",
+            "ML models"
+        ],
+        "missing_skills": [
+            "GCP or Azure experience",
+            "Kubernetes",
+            "API development",
+            "Experience with vector databases",
+            "Experience with distributed ML systems"
+        ],
+        "critical_gaps": [
+            "Experience with Kubernetes or container orchestration",
+            "Experience deploying ML systems to production at scale"
+        ]
+    },
+    "experience_match": {
+        "score": 7,
+        "analysis": "John has relevant experience building ML systems in production, especially in NLP and retrieval systems, with a solid background in Python and cloud deployment (AWS). However, his exposure to distributed ML systems, container orchestration (Kubernetes), and full MLOps pipelines is limited, which are critical for the role.",
+        "pros": [
+            "Strong Python and ML framework experience.",
+            "Hands-on with production ML systems and deployment.",
+            "Experience with NLP, embeddings, and LLM-related projects."
+        ],
+        "cons": [
+            "Limited experience with Kubernetes and container orchestration.",
+            "Lack of deep experience with MLOps pipelines and distributed systems.",
+            "No direct mention of experience with vector databases or advanced ML infrastructure."
+        ]
+    },
+    "technical_alignment": {
+        "score": 6,
+        "analysis": "While John has a good foundation in ML and cloud deployment, his familiarity with the specific tools and systems (Kubernetes, API development, distributed ML) required for this role is limited. His experience aligns more with research and prototyping rather than large-scale production systems.",
+        "pros": [
+            "Experience with cloud (AWS) and ML frameworks.",
+            "Hands-on with ML deployment in production environments."
+        ],
+        "cons": [
+            "Limited experience with container orchestration and distributed ML systems.",
+            "No explicit experience with API development or vector databases."
+        ]
+    },
+    "role_readiness": {
+        "score": 6,
+        "analysis": "John demonstrates the technical capability to contribute to ML projects but lacks some of the key operational skills such as container orchestration, scalable deployment, and system design at scale, which are essential for a senior role in a production environment.",
+        "pros": [
+            "Proven ability to develop and deploy ML models."
+        ],
+        "cons": [
+            "Needs development in system design, orchestration, and scalable deployment practices.",
+            "Limited experience with cross-functional collaboration at the system level."
+        ]
+    },
+    "insights": {
+        "potential_red_flags": [
+            "Limited experience with Kubernetes and container orchestration.",
+            "No explicit experience with large-scale distributed ML systems."
+        ],
+        "suggested_interview_questions": [
+            "Can you describe your experience deploying ML systems at scale, particularly with container orchestration tools like Kubernetes?",
+            "How have you integrated ML models into production environments, and what challenges did you face?",
+            "Describe a project where you built or maintained a distributed ML pipeline."
+        ],
+        "culture_fit_estimation": "John appears to be a technically capable engineer with a focus on ML development and deployment, but may need guidance and mentorship to fully adapt to a senior role requiring extensive operational and system design expertise."
+    },
+    "executive_summary": "John Doe is a strong candidate with solid experience in ML model development and deployment, particularly in NLP and retrieval systems. However, his limited exposure to container orchestration, distributed systems, and full MLOps pipelines suggests he may need additional training or mentorship to meet all the technical demands of this senior AI engineering role. He is a good fit for teams looking for a technically skilled engineer with room for growth in operational infrastructure."
+}
