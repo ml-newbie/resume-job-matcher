@@ -343,3 +343,5 @@ if st.button("Run Matching"):
 
     else:
         st.warning("Please upload both Resume and Job Description.")
+st.markdown("---")
+st.caption("© 2026 Developed by John Merwin.")
