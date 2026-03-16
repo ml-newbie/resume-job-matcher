@@ -6,3 +6,4 @@ pydantic
 pypdf
 plotly
 python-dotenv
+tiktoken==0.4.3
