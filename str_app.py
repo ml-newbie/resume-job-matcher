@@ -129,7 +129,7 @@ with col2:
 
 
 # Run Button
-if st.button("Run Matching"):
+if st.button("Run Job Match Analysis"):
 
     if resume_file and jd_file:
 
