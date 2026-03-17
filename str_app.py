@@ -28,13 +28,55 @@ def check_password():
         background: linear-gradient(135deg, #eef2ff, #f8fafc);
     }
 
+    /* Center container spacing */
+    .block-container {
+        padding-top: 5rem;
+    }
+
     /* Login card */
     .login-card {
-        padding: 45px;
+        padding: 45px 45px 30px 45px;
         border-radius: 16px;
         background: white;
         box-shadow: 0 12px 35px rgba(0,0,0,0.08);
         text-align: center;
+        margin-bottom: -20px;
+    }
+
+    /* Input container (single border) */
+    div[data-baseweb="input"] {
+        border: 2px solid #6366f1;
+        border-radius: 8px;
+        padding: 2px;
+    }
+
+    /* Remove Streamlit internal border */
+    div[data-baseweb="input"] > div {
+        border: none !important;
+    }
+
+    /* Focus glow */
+    div[data-baseweb="input"]:focus-within {
+        border: 2px solid #4f46e5;
+        box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+    }
+
+    /* Input padding */
+    div[data-baseweb="input"] input {
+        padding: 10px;
+    }
+
+    /* Login button styling */
+    .stButton > button {
+        background-color: #6366f1;
+        color: white;
+        border-radius: 8px;
+        height: 45px;
+        font-weight: 600;
+    }
+
+    .stButton > button:hover {
+        background-color: #4f46e5;
     }
 
     .login-title {
@@ -46,7 +88,7 @@ def check_password():
     .login-subtitle {
         color: #6b7280;
         font-size: 16px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     </style>
@@ -72,7 +114,7 @@ def check_password():
         <div class="login-card">
             <div class="login-title">🔒 AI Resume Matcher</div>
             <div class="login-subtitle">
-                Evaluate candidate fit using AI-powered resume analysis
+                Match resumes with job description
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -107,6 +149,10 @@ if not check_password():
 
     
 st.title("AI Resume ↔ Job Description Matcher")
+st.markdown(
+    '<p style="font-size:10px; color:gray; text-align:center;">© 2026 Developed by John M. using Crew AI.</p>',
+    unsafe_allow_html=True
+)
 
 st.write(
     "Upload a candidate resume and a job description to evaluate candidate fit."
@@ -343,5 +389,5 @@ if st.button("Run Job Match Analysis"):
 
     else:
         st.warning("Please upload both Resume and Job Description.")
-st.markdown("---")
-st.caption("© 2026 Developed by John M. using Crew AI.")
+# st.markdown("---")
+# st.caption("© 2026 Developed by John M. using Crew AI.")
