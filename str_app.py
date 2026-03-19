@@ -11,6 +11,25 @@ from pdf_reader import read_pdf
 from run_workflow import run_resume_matching
 from get_keys import get_secret
 
+st.markdown("""
+<style>
+/* Reduce metric label (Candidate, Role, Overall Fit) */
+div[data-testid="stMetricLabel"] {
+    font-size: 12px !important;
+}
+
+/* Reduce metric value (name, job title, score) */
+div[data-testid="stMetricValue"] {
+    font-size: 16px !important;
+}
+
+/* Optional: reduce spacing */
+div[data-testid="stMetric"] {
+    gap: 4px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 APP_PASSWORD = get_secret("APP_PASSWORD")
 
 def check_password():
@@ -142,15 +161,15 @@ def check_password():
         return False
     else:
         return True
-        
+
 st.set_page_config(page_title="AI Resume Matcher", page_icon="📄", layout="wide")
 if not check_password():
     st.stop()
 
-    
+
 st.title("AI Resume ↔ Job Description Matcher")
 st.markdown(
-    '<p style="font-size:10px; color:gray; text-align:center;">© 2026 Developed by John M. using Crew AI.</p>',
+    '<p style="font-size:11px; color:gray; text-align:left;">© 2026 Developed by John M. using Crew AI.</p>',
     unsafe_allow_html=True
 )
 
@@ -200,15 +219,35 @@ if st.button("Run Job Match Analysis"):
             col1, col2, col3 = st.columns(3)
 
             with col1:
-                st.metric("Candidate", report.candidate_name)
+                # st.metric("Candidate", report.candidate_name)
+                st.markdown(f"""
+                    <div style="text-align:center;">
+                        <div style="font-size:12px; color:gray;">Candidate</div>
+                        <div style="font-size:16px; font-weight:600;">{report.candidate_name}</div>
+                    </div>
+                """, unsafe_allow_html=True)  
 
             with col2:
-                st.metric("Role", report.job_title)
+                # st.metric("Role", report.job_title)
+                st.markdown(
+                    f"""
+                    <div style="text-align:center;">
+                        <div style="font-size:12px; color:gray;">Role</div>
+                        <div style="font-size:16px; font-weight:600;">{report.job_title}</div>
+                    </div>
+                """,
+                    unsafe_allow_html=True,
+                )
 
             with col3:
-                st.metric(
-                    "Overall Fit",
-                    f"{report.overall_fit_score}/10"
+                st.markdown(
+                    f"""
+                    <div style="text-align:center;">
+                        <div style="font-size:12px; color:gray;">Overall Fit</div>
+                        <div style="font-size:16px; font-weight:600;">{report.overall_fit_score}/10</div>
+                    </div>
+                """,
+                    unsafe_allow_html=True,
                 )
 
             # ==============================
